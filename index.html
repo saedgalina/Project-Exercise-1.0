@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It-incubator precourse</title>
+  </head>
+  <body>
+    <!-- ЗАДАНИЕ -->
+    <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
+    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
+
+    <header>
+      <span>IT-INCUBATOR</span>
+    </header>
+
+    <section data-cy="hw1-section-main-pre">
+      <!-- 1) В этом разделе создай 3 дочерних элемента: -->
+
+      <h1>Саедгалина Лилия</h1>
+      <p>
+        Я работаю техническим специалистом в онлайн-проектах и изучаю
+        программирование
+      </p>
+      <img
+        width="250px"
+        src="https://fs-thb01.getcourse.ru/fileservice/file/thumbnail/h/AB.7a236b4fd93206fb706b703d6e9ad4cf.jpg/s/800x800/a/674217/sc/131"
+        alt="фото_специалиста"
+      />
+    </section>
+
+    <section data-cy="hw1-section-about-pre">
+      <select name="city" id="city-select">
+        <option value="lo">London</option>
+        <option value="ekb" selected>Ekaterinburg</option>
+        <option value="pr">Paris</option>
+        <option value="spb">Saint Petersburg</option>
+        <option value="br">Berlin</option>
+      </select>
+      <div data-cy="hw1-unordered-list-box-pre">
+        <h2>Мои проекты сегодня:</h2>
+        <ul>
+          <li>MarysAcademy</li>
+          <li>Digital Education</li>
+          <li>Школа мастеров массажа</li>
+          <li>Profi Training</li>
+        </ul>
+      </div>
+      <div data-cy="hw1-ordered-list-box-pre">
+        <h2>Мои ключевые навыки:</h2>
+        <ol>
+          <li>GetCourse</li>
+          <li>Salebot</li>
+          <li>BotHelp</li>
+          <li>Yandex</li>
+          <li>Tilda</li>
+        </ol>
+      </div>
+      <div data-cy="hw1-skills-box-pre">
+        <h2>Мои скиллы</h2>
+        <input type="checkbox" id="HTML" name="skill" value="HTML" checked />
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="CSS" name="skill" value="CSS" checked />
+        <label for="CSS">CSS</label>
+        <input
+          type="checkbox"
+          id="JavaScript"
+          name="skill"
+          value="JavaScript"
+        />
+        <label for="React">React</label>
+      </div>
+      <form>
+        <input
+          type="text"
+          id="new_skill"
+          name="new_skill"
+          required
+          placeholder="Новый скилл"
+        />
+        <input type="submit" value="“Добавить”" />
+      </form>
+      <hr />
+      <table data-cy="hw-about-table-pre" border="1px solid #333;">
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td colspan="2">Итого:</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </section>
+    <footer data-cy="hw-footer-pre">
+      <a href="https://it-incubator.io/">it-incubator</a>
+    </footer>
+  </body>
+</html>
